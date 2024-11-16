@@ -1,30 +1,52 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Analyseur de sylloggisme</title>
-    <link rel="stylesheet" href="src/css/reset.css" type="text/css" />
-    <link rel="stylesheet" href="src/css/style.css" type="text/css" />
-  </head>
-  <body>
-    <h1>Analyseur de sylloggisme</h1>
-    <div id="quantificateurs">
-      <div>
-        <input type="radio" name="" id="tous" /> <label for="tous">Tous</label>
-      </div>
-      <div>
-        <input type="radio" name="" id="aucun" />
-        <label for="aucun">Aucun</label>
-      </div>
-      <div>
-        <input type="radio" name="" id="exist" />
-        <label for="exist">Il existe</label>
-      </div>
-      <div>
-        <input type="radio" name="" id="noexist" />
-        <label for="noexist">Il n'existe pas</label>
-      </div>
-    </div>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syllogis - Accueil</title>
+    <link rel="stylesheet" href="./LandingPage.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Erica+One&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Erica+One&display=swap');
+        </style>
+</head>
+<body>
+   
+    
+    <main>
+        <div class="Logo-container">
+            <p class="Logo">SYLLGIS</p>  
+        </div>
+        <div class="header">
+           
+            <nav>
+                <a href="#">Commencer</a>
+                <a href="#">Comment ça marche?</a>
+                <a href="#">À propos</a>
+            </nav>
+        </div>
+        <div class="content">
+            <div class="left-side">
+                <img src="./illustration/Bye.png" alt="Illustration d'une personne sortant d'une porte" class="illustration">
+
+            </div>
+            
+            <div class="right-side">
+                <div class="Text">
+                    <h1>Bienvenu !</h1>
+                    <p>Vérifie tes syllogisme des maintenant</p>
+                </div>
+                <div class="button-start">
+                    <button id="startButton">Commencer !</button>
+                </div>
+            </div>
+            
+           
+        </div>
+    </main>
+    
+    <script src="./LandingPage.js"></script>
+</body>
 </html>
