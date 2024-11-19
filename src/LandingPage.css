@@ -20,9 +20,11 @@ body {
     background: linear-gradient(231.16deg, #e7644d 17.93%, rgb(210 69 44) 83.94%);
     color: #f1d8c5;
     display: flex;
+  
     justify-content: center;
     align-items: center;
     height: 100vh;
+    transition: all 0.6s;
  
 }
 .Logo-container {
@@ -48,6 +50,7 @@ body {
     margin-top:30px;
     display: flex;
     justify-content: center;
+    transition: 0.5s ease-in;
     
 }
 .header nav {
@@ -66,8 +69,8 @@ body {
 
 }
 .content-Container{
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
     
@@ -85,9 +88,14 @@ body {
     align-items: center;
     justify-content: center;
     padding: 30px;
-
+    .left-side {
+    opacity: 1;
+    transition: 0.4s;
+    }
     .right-side {
         color:#f1d8c5;
+        opacity: 1;
+        transition: 0.3s;
         .Text {
             text-align: left;
             margin-bottom: 60px;
@@ -120,14 +128,18 @@ body {
         }
     
 }
+
 .button-container{
     position: absolute;
     width: 100%;
     left: 0;
-    bottom: 30px;
+    bottom: -200px;
     height: 45px;
     display: flex;
     justify-content: center;
+    transition: all 0.4s ease-out;
+    
+    
     .Button-flex-display {
         display: flex;
         justify-content: space-between;
@@ -154,6 +166,10 @@ body {
                 bottom: 50px;
                 border-radius: 10px;
                 border: 1px solid #E64A2E;
+                bottom: -100px;
+                opacity: 0;
+                transition: 0.5s;
+                
                     .Quantificateur-Choice-List{
                         height: 100%;
                         padding: 5px;
@@ -218,6 +234,8 @@ body {
             .arrow-up{
                 position: absolute;
                 margin: 10px 10px 11px 10px;
+                transform: rotate(180deg);
+                transition: 0.2s;
             }
         }
         .placeholder-sujet {
@@ -274,6 +292,41 @@ body {
 }
 
 }
+.Proposition-container{
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    transition: 0.3s;
+    transition-delay: 0.3 ;
+    opacity: 0;
+    position: absolute;
+    display: none;
+    z-index: -1;
+    display: flex;
+    opacity: 1;
+    flex-direction: column;
+    align-content: flex-end;
+    justify-content: flex-start;
+        .Proposition1{
+            text-align: end;
+            margin-top: 20px;
+            #Title-Prop {
+                font-family: "Erica One";
+                font-weight: lighter;
+                font-size: 24px;
+                margin-top: 10px;
+
+                
+
+            }
+            #Sentence-Prop{
+                margin-top: 10px;
+                font-size: 40px;
+                font-family: 'Epilogue';
+                margin-bottom: 0;
+            }
+        }
+}
 }
    
 
@@ -293,10 +346,17 @@ p {
 }
 
 
-
-button:hover {
-    background-color: #FFCCBC;
+#startButton {
+    transition: 0.2s;
 }
+#startButton:hover {
+    background-color: #FFCCBC;
+    transform: scale(0.98);
+    transition: 0.2s;
+}
+
+
+
 
 
 @media (max-width: 490px) {
