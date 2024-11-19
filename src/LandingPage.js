@@ -48,7 +48,7 @@ function  verfyConclusion(i) {
     if(i % 3 == 0) {
         return "Conclusion"
     }
-    else return `Proposition ${i}`
+    else return `Premisse ${i}`
 }
 function displayProposition() {
  let value = '';
