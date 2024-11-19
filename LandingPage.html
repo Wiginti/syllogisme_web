@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Syllogis - Accueil</title>
-    <link rel="stylesheet" href="./LandingPage.css">
+    <link rel="stylesheet" href="./src/LandingPage.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Erica+One&display=swap');
     </style>
@@ -27,6 +27,11 @@
                 <a href="#">À propos</a>
             </nav>
         </div>
+        
+        
+        <div class="content-Container">
+
+        
         <div class="content">
             <div class="left-side">
                 <img src="./illustration/Bye.png" alt="Illustration d'une personne sortant d'une porte" class="illustration">
@@ -42,11 +47,49 @@
                     <button id="startButton">Commencer !</button>
                 </div>
             </div>
+
+            <div class="button-container">
+                <div class="Button-flex-display">
+                <div class="Button-quantificateur">
+                    <div class="Quantificateur-Values-Box">
+                        <div class="Quantificateur-Choice-List">
+                            <div class="Quantificateur-Choice-List-Values-and-add">
+                                <div class="Add-Button">  
+                                    <p>Ajouter</p>
+                                    <img src="./illustration/edit-2.png" alt="Edit Icon">
+                                </div>
+                                <div id="Quantificateur-Avaible">
+                                    
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <input type="text" id="Quantificateur" name="Quantificateur" placeholder="Quantificateur"
+                    ><img src="./illustration/arrow-up.png" class="arrow-up">
+                    
+                    
+                </div>
+                <div class="placeholder-sujet">
+                    <input type="text" id="Sujet" name="Subject" placeholder="Sujet..."
+                    />
+                </div>
+                <div class="placeholder-predicat">
+                    <input id="Predicat" name="Predicat" placeholder="Predicat..."
+                    />
+                </div>
+                <div class="Button-send">
+                    <img src="./illustration/arrow-right.png" alt="">
+                </div>
+            </div>
+        </div>
             
            
         </div>
+    </div>
     </main>
     
-    <script src="./LandingPage.js"></script>
+    <script src="./src/LandingPage.js"></script>
 </body>
 </html>
