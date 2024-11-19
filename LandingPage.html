@@ -19,7 +19,7 @@
         <div class="Logo-container">
             <p class="Logo">SYLLGIS</p>  
         </div>
-        <div class="header">
+        <div class="header" id="header-pointer">
            
             <nav>
                 <a href="#">Commencer</a>
@@ -33,12 +33,12 @@
 
         
         <div class="content">
-            <div class="left-side">
+            <div class="left-side" id="left-side-pointer">
                 <img src="./illustration/Bye.png" alt="Illustration d'une personne sortant d'une porte" class="illustration">
 
             </div>
             
-            <div class="right-side">
+            <div class="right-side" id="right-side-pointer">
                 <div class="Text">
                     <h1>Bienvenu !</h1>
                     <p>Vérifie tes syllogisme des maintenant</p>
@@ -47,11 +47,12 @@
                     <button id="startButton">Commencer !</button>
                 </div>
             </div>
-
-            <div class="button-container">
+            
+   
+            <div class="button-container" id="button-container-pointer" >
                 <div class="Button-flex-display">
-                <div class="Button-quantificateur">
-                    <div class="Quantificateur-Values-Box">
+                <div class="Button-quantificateur" id="Button-quantificateur-pointer" onclick="OpenAlert()" >
+                    <div class="Quantificateur-Values-Box" id="Quantificateur-Values-Box-pointer">
                         <div class="Quantificateur-Choice-List">
                             <div class="Quantificateur-Choice-List-Values-and-add">
                                 <div class="Add-Button">  
@@ -67,7 +68,7 @@
                     </div>
 
                     <input type="text" id="Quantificateur" name="Quantificateur" placeholder="Quantificateur"
-                    ><img src="./illustration/arrow-up.png" class="arrow-up">
+                    ><img src="./illustration/arrow-up.png" class="arrow-up" id="arrow-up-pointer">
                     
                     
                 </div>
@@ -79,12 +80,15 @@
                     <input id="Predicat" name="Predicat" placeholder="Predicat..."
                     />
                 </div>
-                <div class="Button-send">
+                <div class="Button-send" onclick="AddProposition()">
                     <img src="./illustration/arrow-right.png" alt="">
                 </div>
             </div>
         </div>
             
+           
+        </div>
+        <div class="Proposition-container" id="Proposition-container-pointer">
            
         </div>
     </div>
