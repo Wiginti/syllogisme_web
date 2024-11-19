@@ -18,7 +18,7 @@
   }
 body {
     background: linear-gradient(231.16deg, #e7644d 17.93%, rgb(210 69 44) 83.94%);
-    color: #F1E3D9;
+    color: #f1d8c5;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,19 +59,26 @@ body {
 }
 
 .header nav a {
-    color: #F1E3D9;
+    color: #f1d8c5;
     text-decoration: none;
     text-transform: uppercase;
     font-family: "Epilogue";
 
 }
+.content-Container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    
 
 .content {
     text-align: center;
     text-align: center;
     width: 100%;
+    max-width: 1440px;
     height: 100%;
-    position: absolute;
+   
     top:0;
     left: 0;
     display: flex;
@@ -80,7 +87,7 @@ body {
     padding: 30px;
 
     .right-side {
-        
+        color:#f1d8c5;
         .Text {
             text-align: left;
             margin-bottom: 60px;
@@ -97,12 +104,13 @@ body {
         }
         .button-start {
             text-align: right;
+
             button {
                 font-family: "Erica One";
                 font-weight: lighter;
                 /* width: 50%; */
                 padding: 15px;
-                background-color: #F1E3D9;
+                background-color: #f1d8c5;
                 color: #ee573c;
                 font-size: 32px;
                 border: none;
@@ -112,12 +120,167 @@ body {
         }
     
 }
+.button-container{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 30px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    .Button-flex-display {
+        display: flex;
+        justify-content: space-between;
+        gap: 32px;
+        width: 75%;
+        max-width: 1080px;
+        
+       
+
+
+        .Button-quantificateur {
+            display: flex;
+            justify-content: flex-end;
+            align-content: flex-start;
+            align-items: center;
+            width: 100%;
+            position: relative;
+            .Quantificateur-Values-Box {
+                background: #f1d8c5;
+                width: 100%;
+                max-width: 313px;
+                height: calc(3 * 45px);
+                position: absolute;
+                bottom: 50px;
+                border-radius: 10px;
+                border: 1px solid #E64A2E;
+                    .Quantificateur-Choice-List{
+                        height: 100%;
+                        padding: 5px;
+                        .Quantificateur-Choice-List-Values-and-add::-webkit-scrollbar {       /*  Scroll Bar Disabler for Safari */
+                            display: none;
+                          } 
+                        .Quantificateur-Choice-List-Values-and-add{
+                            height: 100%;
+                            overflow: scroll;
+                            -ms-overflow-style: none;  /* IE and Edge */
+                            scrollbar-width: none;
+                            padding: 10px;
+                            .Add-Button{
+                                color: rgba(238, 87, 60, 0.8);
+                                background-color: #e4d7d0ea;
+                                border-radius: 10px;
+                                text-align: left;
+                                height: 41px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                padding: 10px;
+                                margin-bottom: 4px;
+                                p {
+                                    pointer-events: none;
+                                    font-size: larger;
+                                    margin: 0;
+                                    font-family: "Epilogue";
+                                }
+                            }
+                            .Quantificateur  {
+                                color: rgba(238, 87, 60, 0.8);
+                                background-color: #e4d7d0ea;
+                                border-radius: 10px;
+                                text-align: left;
+                                height: 41px;
+                                display: flex;
+                                align-items: center;
+                                padding: 10px;
+                                margin-bottom: 4px;
+
+                                    p {
+                                        pointer-events: none;
+                                        font-size: larger;
+                                        margin: 0;
+                                        font-family: "Epilogue";
+                                    }
+                            }
+                        }
+                    }
+            }
+            input {
+                width: 100%;
+                min-width: 209px ;
+                pointer-events: none;
+                background-color:#f1d8c5 ;
+                height: 100%;
+                border-radius: 10px;
+                border: 1px solid #E64A2E;
+                padding-left: 15px;
+            }
+            .arrow-up{
+                position: absolute;
+                margin: 10px 10px 11px 10px;
+            }
+        }
+        .placeholder-sujet {
+            width: 100%;
+            min-width: 209px ;
+
+            input {
+                width: 100%;
+                background-color:#f1d8c5 ;
+                height: 100%;
+                border-radius: 10px;
+                border: 1px solid #E64A2E;
+                padding-left: 15px;
+            }
+           
+        }
+        .placeholder-predicat {
+            width: 100%;
+            min-width: 209px ;
+            input {
+                width: 100%;
+                background-color:#f1d8c5 ;
+                height: 100%;
+                border-radius: 10px;
+                border: 1px solid #E64A2E;
+                padding-left: 15px;
+            }
+    
+        }
+        .Button-send{
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color:#f1d8c5;
+            height: 94%;
+            aspect-ratio: 1 / 1;
+            border-radius: 100%;
+           
+        }
+        input:focus{
+            outline: none;
+        }
+        ::placeholder {
+           
+            font-size: larger ;
+            
+            font-family: "Epilogue";
+            color: rgba(238, 87, 60, 0.6);
+        }
+    }
    
+
 }
 
-.illustration {
- 
 }
+}
+   
+
+
+/* .illustration {
+ 
+} */
 
 h1 {
     font-size: 48px;
