@@ -1,1 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Syllogis - Accueil</title>
+    <link rel="stylesheet" href="./src/LandingPage.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Erica+One&display=swap");
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Erica+One&display=swap");
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="Logo-container">
+        <p class="Logo">SYLLGIS</p>
+      </div>
+      <div class="header" id="header-pointer">
+        <nav>
+          <a href="#">Commencer</a>
+          <a href="#">Comment ça marche?</a>
+          <a href="#">À propos</a>
+        </nav>
+      </div>
+
+      <div class="content-Container">
+        <div class="content">
+          <div class="left-side" id="left-side-pointer">
+            <img
+              src="./illustration/Bye.png"
+              alt="Illustration d'une personne sortant d'une porte"
+              class="illustration"
+            />
+          </div>
+
+          <div class="right-side" id="right-side-pointer">
+            <div class="Text">
+              <h1>Bienvenue !</h1>
+              <p>Vérifie tes syllogismes dès maintenant</p>
+            </div>
+            <div class="button-start">
+              <button id="startButton" onclick="StartButton()">
+                Commencer !
+              </button>
+            </div>
+          </div>
+
+          <div class="button-container" id="button-container-pointer">
+            <div class="Button-flex-display">
+              <div
+                class="Button-quantificateur"
+                id="Button-quantificateur-pointer"
+                onclick="OpenAlert()"
+              >
+                <div
+                  class="Quantificateur-Values-Box"
+                  id="Quantificateur-Values-Box-pointer"
+                >
+                  <div class="Quantificateur-Choice-List">
+                    <div class="Quantificateur-Choice-List-Values-and-add">
+                      <div class="Add-Button">
+                        <p>Ajouter</p>
+                        <img src="./illustration/edit-2.png" alt="Edit Icon" />
+                      </div>
+                      <div id="Quantificateur-Avaible"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <input
+                  type="text"
+                  id="Quantificateur"
+                  name="Quantificateur"
+                  placeholder="Quantificateur"
+                /><img
+                  src="./illustration/arrow-up.png"
+                  class="arrow-up"
+                  id="arrow-up-pointer"
+                />
+              </div>
+              <div class="placeholder-sujet">
+                <input
+                  type="text"
+                  id="Sujet"
+                  name="Subject"
+                  placeholder="Sujet..."
+                />
+              </div>
+              <div class="placeholder-predicat">
+                <input
+                  id="Predicat"
+                  name="Predicat"
+                  placeholder="Predicat..."
+                />
+              </div>
+              <div class="Button-send" onclick="AddPremisse()">
+                <img src="./illustration/arrow-right.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="Premisse-container" id="Premisse-container-pointer"></div>
+      </div>
+    </main>
+
+    <script src="./src/LandingPage.js"></script>
+    <script src="./src/js/index.js"></script>
+    <script src="./src/js/PremisseConst.js"></script>
+    <script src="./src/js/Syllogisme.js"></script>
+  </body>
+</html>
 
